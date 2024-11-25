@@ -55,63 +55,105 @@
 
     <div class="relative container mx-auto flex flex-col md:flex-row items-center p-5 h-screen paper-border mb-6 section-background">
         <img src="{% static 'myapp/img/clip.svg' %}" alt="Clip" class="absolute left-0 top-4 w-16 h-16"> <!-- SVG Clip Image -->
+        
+        <!-- Text Section -->
         <div class="inner-paper md:w-1/2">
             <h1 class="text-4xl font-bold text-gray-800">
                 Hi! I am <span class="text-pink-500">Vinci Miguelle Narca Agua</span>
-                <!-- Image after the text -->
                 <img src="{% static 'myapp/img/tulip2 (3).svg' %}" alt="Icon" class="inline-block w-8 h-8 ml-2">
             </h1>
             <p class="mt-4 text-gray-600">
-                Debater, Top Student, Queen & Definition of Beauty and Brain
-                <!-- Image after the text -->
+                A passionate Debater, Top Student, and a true embodiment of Beauty and Brains. 
                 <img src="{% static 'myapp/img/tulips.svg' %}" alt="Icon" class="inline-block w-6 h-6 ml-2">
             </p>
+            <p class="mt-4 text-gray-600">
+                Serving as the Lead Ambassador for Internationalization at CNU, I proudly represent the institution on a global stage, 
+                fostering connections and promoting cultural exchange. Currently, I am a dedicated 4th-year BSNED student at CNU, 
+                committed to excellence both academically and personally. 
+                <img src="{% static 'myapp/img/tulips.svg' %}" alt="Icon" class="inline-block w-6 h-6 ml-2">
+            </p>
+    
+            <!-- Reach Me Section -->
+            <h3 class="text-lg md:text-2xl mb-4 mt-6">Reach me thru</h3>
+            <div class="flex space-x-6 md:space-x-10">
+                <a href="https://www.linkedin.com/in/hans-archer-dalubatan-661b2a1aa/" target="_blank">
+                    <img src="{% static 'myapp/img/linkedin.svg' %}" alt="LinkedIn" class="w-16 h-16 md:w-12 md:h-12 transition-transform duration-300 transform hover:scale-110" />
+                </a>
+                <a href="https://profile.indeed.com/p/hansarchermontezond-g22m4yp" target="_blank">
+                    <img src="{% static 'myapp/img/indeed.svg' %}" alt="Indeed" class="w-16 h-16 md:w-12 md:h-12 transition-transform duration-300 transform hover:scale-110" />
+                </a>
+                <a href="https://www.facebook.com/hanzzarcherr" target="_blank">
+                    <img src="{% static 'myapp/img/facebook.svg' %}" alt="Facebook" class="w-16 h-16 md:w-12 md:h-12 transition-transform duration-300 transform hover:scale-110" />
+                </a>
+            </div>
+            <div class="mt-6">
+                <a href="" class="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow hover:bg-blue-600 transition duration-300">
+                    Download CV
+                </a>
+            </div>
         </div>
+    
+        <!-- Image Section -->
         <div class="md:w-1/2 mt-8 md:mt-0">
             <img src="{% static 'myapp/img/vinci.jpg' %}" alt="Business Image" class="rounded-lg shadow-lg w-3/4 ml-8">
         </div>
     </div>
     
-<!-- Education Section -->
-<div class="container mx-auto flex flex-col items-center p-5 h-screen paper-border mb-6 section-background">
+    
+<!-- Education Timeline Section -->
+<div class="container mx-auto flex flex-col items-center p-5 paper-border mb-6 section-background">
     <h1 class="text-4xl font-bold text-gray-800 text-center mb-8">My Education Journey</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-        <!-- Card for Elementary School -->
-        <div class="bg-white shadow-lg rounded-lg p-5">
-            <div class="flex items-center">
-                <img src="{% static 'myapp/img/elementary.jpg' %}" alt="Elementary School" class="w-1/3 h-auto rounded-lg shadow-md mr-4"> <!-- Image for Elementary School -->
-                <div>
+    <div class="relative w-full max-w-4xl">
+        <!-- Timeline Line -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
+
+        <!-- Elementary School -->
+        <div class="mb-10 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex justify-end">
+                <div class="bg-white shadow-lg rounded-lg p-5 w-4/5 relative z-10">
                     <h2 class="text-2xl font-semibold text-gray-800">Elementary School</h2>
                     <p class="mt-2 text-gray-600">XYZ Elementary School</p>
                     <p class="mt-2 text-gray-500">Graduated: 2010</p>
                 </div>
             </div>
+            <div class="hidden md:block md:w-1/2 flex justify-center items-center">
+                <img src="{% static 'myapp/img/elementary.jpg' %}" alt="Elementary School" class="w-24 h-auto rounded-lg shadow-md">
+            </div>
         </div>
-        <!-- Card for High School -->
-        <div class="bg-white shadow-lg rounded-lg p-5">
-            <div class="flex items-center">
-                <img src="{% static 'myapp/img/highschool.jpg' %}" alt="High School" class="w-1/3 h-auto rounded-lg shadow-md mr-4"> <!-- Image for High School -->
-                <div>
+
+        <!-- High School -->
+        <div class="mb-10 flex flex-col md:flex-row-reverse items-center">
+            <div class="md:w-1/2 flex justify-end">
+                <div class="bg-white shadow-lg rounded-lg p-5 w-4/5 relative z-10">
                     <h2 class="text-2xl font-semibold text-gray-800">High School</h2>
                     <p class="mt-2 text-gray-600">ABC High School</p>
                     <p class="mt-2 text-gray-500">Graduated: 2014</p>
                 </div>
             </div>
+            <div class="hidden md:block md:w-1/2 flex justify-center items-center">
+                <img src="{% static 'myapp/img/highschool.jpg' %}" alt="High School" class="w-24 h-auto rounded-lg shadow-md">
+            </div>
         </div>
-        <!-- Card for University -->
-        <div class="bg-white shadow-lg rounded-lg p-5">
-            <div class="flex items-center">
-                <img src="{% static 'myapp/img/university.jpg' %}" alt="University" class="w-1/3 h-auto rounded-lg shadow-md mr-4"> <!-- Image for University -->
-                <div>
+
+        <!-- University -->
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex justify-end">
+                <div class="bg-white shadow-lg rounded-lg p-5 w-4/5 relative z-10">
                     <h2 class="text-2xl font-semibold text-gray-800">University</h2>
                     <p class="mt-2 text-gray-600">LMN University</p>
                     <p class="mt-2 text-gray-500">Degree: Bachelor of Science in Computer Science</p>
                     <p class="mt-2 text-gray-500">Graduated: 2018</p>
                 </div>
             </div>
+            <div class="hidden md:block md:w-1/2 flex justify-center items-center">
+                <img src="{% static 'myapp/img/university.jpg' %}" alt="University" class="w-24 h-auto rounded-lg shadow-md">
+            </div>
         </div>
     </div>
 </div>
+
+
+
 
 
 
